@@ -1,0 +1,1 @@
+try{if(!sessionStorage.getItem("mw-intro")&&!matchMedia("(prefers-reduced-motion: reduce)").matches&&(!location.hash||location.hash==="#home")){sessionStorage.setItem("mw-intro","1");document.documentElement.classList.add("intro");setTimeout(function(){document.documentElement.classList.remove("intro")},1500)}}catch(e){}

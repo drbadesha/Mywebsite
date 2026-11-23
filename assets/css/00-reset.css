@@ -1,0 +1,11 @@
+/* ---- source block @111 ---- */
+:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+/* Featured cards: darker shading behind the text so it reads on any photo */
+#page-home #featured .fx-media::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(to top,rgba(10,16,19,.94) 0%,rgba(10,16,19,.82) 42%,rgba(10,16,19,.35) 72%,rgba(10,16,19,0) 100%)}
+#page-home #featured .fx-body{text-shadow:0 1px 12px rgba(0,0,0,.35)}
+/* rating link in "In their words" + homepage journal row */
+.reviews .rev-g{align-self:end;white-space:nowrap}
+.reviews .rev-g .st{color:#F5B400}
+.home-journal{padding-block:clamp(56px,8vw,96px);border-top:1px solid var(--line)}
+.home-journal .jr-latest{margin:0}
+@media (max-width:760px){.reviews .rev-g{white-space:normal}.home-journal .jr-grid{display:grid;grid-auto-flow:column;grid-auto-columns:82%;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;scrollbar-width:none}.home-journal .jr-grid::-webkit-scrollbar{display:none}.home-journal .jr-card{scroll-snap-align:start}}

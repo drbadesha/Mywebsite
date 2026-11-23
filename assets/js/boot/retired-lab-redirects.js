@@ -1,0 +1,1 @@
+/* v23: retired pages open their LifeLabs panel */(function(){var M={"#t-iron-ferritin":"#lt-ll-iron","#t-autoimmune-panel":"#lt-ll-autoimmune"};function f(){if(M[location.hash])location.replace(M[location.hash])}f();addEventListener("hashchange",f)})();

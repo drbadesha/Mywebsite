@@ -1,0 +1,4 @@
+/* Soft hyphens in very long single words so headings break cleanly on phones (screen readers ignore them) */
+(function(){var M={"Hyperpigmentation":"Hyper\u00ADpigmentation","Phosphatidylcholine":"Phosphatidyl\u00ADcholine","Pharmacogenomics":"Pharmaco\u00ADgenomics","Microneedling":"Micro\u00ADneedling"},R=new RegExp("\\b("+Object.keys(M).join("|")+")\\b","g");
+function run(){document.querySelectorAll("main h1,.pc-n,.tk-name,main h2").forEach(function(el){var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT),n;while(n=w.nextNode()){if(R.test(n.nodeValue)){R.lastIndex=0;n.nodeValue=n.nodeValue.replace(R,function(m){return M[m]})}R.lastIndex=0}})}
+var t;new MutationObserver(function(){clearTimeout(t);t=setTimeout(run,60)}).observe(document.body,{childList:true,subtree:true});addEventListener("hashchange",function(){setTimeout(run,80)});run()})();
